@@ -74,7 +74,7 @@ O Weka simplifica muito o trabalho por ser uma ferramenta simples e intuitiva.<b
 
     Ao executar a ferramenta, tela que se abre é essa abaixo. Perceba que contém várias aplicações (Explorer, Experimenter, KnowledgeFlow, Workbench e Simple CLI)
 
-
+    <div> <a href="#" class="image full"><img src="imagens/weka_tela_inicial (1).png" alt=""></a> </div>
 
     Explorer  Esta aplicação é a mais usada, com esta é possível trabalhar de forma interativa.
      È onde iremos explorar as funções da ferramenta. Vamos focar nessa ferramenta, pois, nas outras podemos fazer muitas funções que contém nessa, mas de forma automatizada.
@@ -88,6 +88,46 @@ O Weka simplifica muito o trabalho por ser uma ferramenta simples e intuitiva.<b
      algoritmos de machine learning e diversas outras tarefas. A vantagem é que você pode automatizar tarefas e integrar na sua aplicação.
     </p>
 
-    <h6></h6>
+    <h6>O weka Explorer:</h6>
+    <p>Clicando na aplicação Explorer é exibida tela inicial com a aba Preprocess marcada.
+
+        È nessa tela que iremos trabalhar com o pré-processamento da nossa base.
+        
+        Na fase de pré-processamento envolve trabalhar no dado antes de realizar algum experimento.
+        
+        Por exemplo, nessa tela é possível remover algum atributo da base de dados, aplicar um filtro de normalização ou discretiza algum atributo.
+        
+        Essa tela exibe estatísticas importantes sobre a base de dados, informações como quantidade instâncias por classe, o tipo de um atributo, a quantidade de atributos faltantes, etc.
+        
+        Veremos algumas tarefas de pré-processamento nas seções seguintes.
+        
+        Clique em Open File e carregue uma base de dados de exemplo para visualizar as informações.
+        
+        Dica: O Weka contém várias bases de dados de exemplos, basta navegar até o diretório de instalação e acessar a pasta data.
+        <div> <a href="#" class="image full"><img src="imagens/weka-datasets.gif" alt=""></a> </div>
+    </p>
+
+    <h7>A base de dados:</h7>
+    <p>
+        O Weka nos permite trabalhar com diferentes fontes de dados.
+
+Podemos importar dados a partir de uma consulta a um banco de dados relacional, a partir de uma URL ou através de arquivo de texto no formato arff.
+
+O formato ARFF significa Attribute-Relation File Format ou Arquivo no Formato Atributo Relação.
+
+Este formato de arquivo é especificado pelo Weka em um padrão muito simples divido basicamente em duas sessões Header (Cabeçalho) e Data (Dado).
+
+Na sessão Header temos a especificação dos atributos de nossa base de dados e seus tipos de dados incluindo a classe.
+
+Na sessão Data é onde informamos ao Weka os dados que constituem nossa base de dados.
+
+Veja no exemplo abaixo o dataset iris no formato arff.
+    <div> <a href="#" class="image full"><img src="imagens/iris-arff.png" alt=""></a> </div>
+    Observe que o nosso arquivo se inicia com a tag @RELATION que indica qual o nome de nossa base de dados.
+
+O próximo passo é definir os atributos e seus tipos de dados utilizando a tag @ATTRIBUTE e por fim marcamos com a tag @DATA onde inicia os dados no arquivo.
+
+Na definição dos atributos podemos especificar diferentes tipos de dados como numeric nominal, string e date. Como é o exemplo do atributo class que é do tipo nominal e possui os três valores únicos (Iris-setosa, Iris-versicolor, Iris-virginica).
+    </p>
 </body>
 </html>
