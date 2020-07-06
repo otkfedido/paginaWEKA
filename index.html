@@ -138,5 +138,56 @@ Na definição dos atributos podemos especificar diferentes tipos de dados como 
         <div> <a href="#" class="image full"><img src="imagens/dataset-iris-csv.png" alt=""></a> </div>
         Para importar dados csv no Weka simplesmente informamos o formato na tela para abrir o arquivo de dados 
     </p>
+    <h9>Árvores de Decisão</h9>
+    <p>
+        As árvores de decisão são algoritmos clássicos e de fácil compreensão.
+
+        Árvores de decisão são similares a regras Se e Então, pois, fazem testes em seus atributos para se tomar uma decisão de qual atributo representa melhor o dado.
+        
+        A árvore de decisão são construídas a partir de uma seqüência de testes nos seus dados de treino.
+        
+        Cada nó interno da árvore corresponde a um teste do valor de uma das propriedades, e os ramos deste nó são identificados com os possíveis valores do teste.
+    </p>
+
+    <h10>Arvore de Decisões pelo Weka</h10>
+    <p>
+        Abra o Weka e clique em Explorer
+
+Vamos carregar a base de dados weather.nominal.arff . Essa base vem junto com o Weka, para testes.
+
+Essa base contém os atributos temperatura, vento,umidade e aspecto.
+
+A classe se vai ter jogo ou não (sim ou não) como demos o exemplo acima, porém, os dados aqui estão em inglês 
+
+Para abrir clique em Open file… navegue até a pasta de instalação do weka, em seguida abra a pasta data, clique no arquivo informado acima
+Após carregar o dataset, é possível ver informações da base. Podemos ver que esta contém 4 atributos (outlook, temperature,humidy,windy) e por fim a coluna ‘Play’ que pode ser da classe Yes ou No.
+
+Para rodar o algoritmo clique na aba Classify, em seguida clique em Choose para escolher o algoritmo.
+
+Será exibida diversas categorias, clique em trees e escolha o algoritmo J48Ok, com o algoritmo selecionado podemos iniciar a classificação clicando em Start.
+
+Mas antes disso, vamos entender melhor essa tela.
+
+Cada algoritmo contém parâmetros que o usuário pode definir antes da execução do mesmo.
+
+Clique em cima do algoritmo para visualizar as opções de parâmetros disponíveis neste.
+
+Perceba que para esse algoritmo existem diversos parâmetros, veja:
+<div> <a href="#" class="image full"><img src="imagens/weka-tela-parametros-algoritmo-j48-classificacao.gif" alt=""></a> </div>
+Por enquanto mantenha os valores default.
+
+Na aba test options, temos as formas de teste e validação que iremos aplicar.
+
+Por padrão o Weka, sugere aplicar o validação usando a técnica de Cross-Validation com 10 folds.
+
+Para entender melhor como essa técnica funciona, leia esse artigo que fizemos onde falamos mais dessa técnica
+
+Clique em Start para executar o algoritmo.
+Ao clicar em Start o algoritmo é executado e validado usando a opção de teste definida.
+
+È exibido os resultados do processo de classificação.
+Que são mais ou menos assim :]
+<div> <a href="#" class="image full"><img src="imagens/weka arvore.jpg" alt=""></a> </div>
+    </p>
 </body>
 </html>
